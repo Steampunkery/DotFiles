@@ -52,3 +52,9 @@ set ai
 
 " Who would want an I-beam cursor in a terminal?
 set guicursor=
+
+" Filetype plugin should be loaded
+filetype plugin indent on
+
+set cindent
+autocmd FileType python setlocal smartindent shiftwidth=4 ts=4 cinwords=if,elif,else,for,while,try,except,finally,def,class
